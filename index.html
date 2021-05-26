@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <!-- reset css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <!-- grid system-->
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <!-- responsive-->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <!-- fontawesome-->
+    <link href="./assets/fonts/fontawesome-free-5.13.1-web/css/all.min.css" rel="stylesheet">
+    <!-- google font: Roboto-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app">
+        <!-- HEADER-->
+        <header class="header" id="home">
+            <nav class="header__top">
+                <div class="top__logo">
+                    <img src="./assets/image/logo.png" />
+                </div>
+
+                <ul class="top__navbar">
+                    <li><a href="#testimonials">How client think</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#product">Product</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <!-- nav mobile & tablet-->
+                <label for="nav-input" class="top__navbar-mobile">
+                    <i class="fas fa-bars"></i>
+                </label>
+
+                <input type="checkbox" hidden id="nav-input" class="nav-input" name="">
+                <label for="nav-input" class="top__navbar-tablet"></label>
+                <nav class="nav-mobile">
+                    <ul class="nav-mobile__list">
+                        <li>
+                            <a href="#testimonials"><i class="far fa-comments"></i> How client think</a>
+                        </li>
+                        <li>
+                            <a href="#about"><i class="fas fa-info-circle"></i> About</a>
+                        </li>
+                        <li>
+                            <a href="#product"><i class="fas fa-cart-plus"></i> Product</a>
+                        </li>
+                        <li>
+                            <a href="#contact"><i class="fas fa-phone"></i> Contact</a>
+                        </li>
+                    </ul>
+                    <label for="nav-input" class="nav-mobile__close">
+                        <i class="fas fa-times"></i>
+                    </label>
+                </nav>
+
+            </nav>
+
+            <div class="header__bottom grid wide">
+                <div class="bottom-wrap">
+                    <h1>
+                        We will study <br> English together. <br>
+                        So join with us.
+                    </h1>
+                    <a href="#about" class="btn"> Tell me more </a>
+                    <a href="#product" class="btn"> Join us</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN -->
+        <main class="main">
+            <!-- ABOUT US-->
+            <section class="about-section grid wide" id="about">
+                <div class="about-section__title">
+                    <h2>About Us</h2>
+                    <p class="txt">
+                        We are people that are studying English by ourselves, we believe that you
+                        don't need to pay so much money for being good at English, we're here to help you
+                    </p>
+                </div>
+                <div class="about-section__wrap">
+                    <div class="row no-gutters">
+                        <div class="col l-3 m-6 c-12 about-section__picture">
+                            <img src="./assets/image/activities1.jpeg" alt="activities1">
+                            <p class="picture__title">Team working</p>
+                        </div>
+                        <div class="col l-3 m-6 c-12 about-section__picture">
+                            <img src="./assets/image/activities2.jpeg" alt="activities2">
+                            <p class="picture__title">Funny class</p>
+                        </div>
+                        <div class="col l-3 m-6 c-12 about-section__picture">
+                            <img src="./assets/image/activities3.jpeg" alt="activities3">
+                            <p class="picture__title">Be confident</p>
+                        </div>
+                        <div class="col l-3 m-6 c-12 about-section__picture">
+                            <img src="./assets/image/activities4.jpeg" alt="activities4">
+                            <p class="picture__title">All our friends</p>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- END ABOUT US-->
+
+            <!-- PRODUCT-->
+            <section class="product-section" id="product">
+                <h2 class="product-section__title">Products</h2>
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-4 m-4 c-12">
+                            <div class="product-section__box">
+                                <h3>Pronunciation class</h3>
+                                <p class="product-section__price">19$ <span>/month</span></p>
+                                <ul>
+                                    <li><i class="fas fa-check box-icon"></i> Native voices</li>
+                                    <li><i class="fas fa-check box-icon"></i> Master IPA</li>
+                                </ul>
+                                <a href="#" class="btn">JOIN US</a>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-4 c-12">
+                            <div class="product-section__box">
+                                <h3>Speaking class</h3>
+                                <p class="product-section__price">25$ <span>/month</span></p>
+                                <ul>
+                                    <li><i class="fas fa-check box-icon"></i> Native speaking</li>
+                                    <li><i class="fas fa-check box-icon"></i> Speaking naturally</li>
+                                </ul>
+                                <a href="#" class="btn">JOIN US</a>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-4 c-12">
+                            <div class="product-section__box">
+                                <h3>Listening class</h3>
+                                <p class="product-section__price">25$ <span>/month</span></p>
+                                <ul>
+                                    <li><i class="fas fa-check box-icon"></i> Native speech</li>
+                                    <li><i class="fas fa-check box-icon"></i> Hearing English clearly</li>
+                                </ul>
+                                <a href="#" class="btn">JOIN US</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- END PRODUCT-->
+
+            <!-- TESTIMONIALS -->
+            <section class="testimonials-section" id="testimonials">
+                <div class="grid wide">
+                    <h2>testimonials</h2>
+                    <div class="row">
+                        <div class="col l-4 m-4">
+                            <blockquote>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde alias iure illum mollitia
+                                fugiat quaerat impedit provident cupiditate! Nesciunt, alias.
+                                Exercitationem in aliquam asperiores accusantium ut cumque hic quidem numquam!
+                                <cite>
+                                    <img src="assets/image/person5.jpeg" alt="person1"> Lorem ipsum dolor.
+                                </cite>
+                            </blockquote>
+                        </div>
+                        <div class="col l-4 m-4">
+                            <blockquote>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde alias iure illum mollitia
+                                fugiat quaerat impedit provident cupiditate! Nesciunt, alias.
+                                Exercitationem in aliquam asperiores accusantium ut cumque hic quidem numquam!
+                                <cite>
+                                    <img src="assets/image/person2.jpeg" alt="person2"> Lorem, ipsum dolor.
+                                </cite>
+                            </blockquote>
+                        </div>
+                        <div class="col l-4 m-4">
+                            <blockquote>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde alias iure illum mollitia
+                                fugiat quaerat impedit provident cupiditate! Nesciunt, alias.
+                                Exercitationem in aliquam asperiores accusantium ut cumque hic quidem numquam!
+                                <cite>
+                                    <img src="assets/image/person3.jpeg" alt="person3"> Lorem, ipsum dolor..
+                                </cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- END TESTIMONIALS-->
+
+            <!-- SPONSOR-->
+            <section class="sponsor-section grid" id="sponsor">
+                <h2>SPONSOR</h2>
+                <div class="grid wide">
+                    <ul class="sponsor-showcase">
+                        <li>
+                            <figure>
+                                <img class="sponsor-showcase__logo" src="assets/image/barcelona_logo.png"
+                                    alt="barcelona">
+                                <figcaption>
+                                    Barcelona
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img class="sponsor-showcase__logo" src="assets/image/mctcity_logo.png"
+                                    alt="manchester city">
+                                <figcaption>
+                                    Manchester city
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img class="sponsor-showcase__logo" src="assets/image/tottenham_logo.png"
+                                    alt="tottenham Hotspur">
+                                <figcaption>
+                                    Tottenham HotSpur
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                    <ul class="sponsor-showcase">
+                        <li>
+                            <figure>
+                                <img class="sponsor-showcase__logo" src="assets/image/real_logo.png" alt="real marid">
+                                <figcaption>
+                                    Real Marid
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img class="sponsor-showcase__logo" src="assets/image/juventus_logo.png" alt="juventus">
+                                <figcaption>
+                                    Juventus
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img class="sponsor-showcase__logo" src="assets/image/mctunited_logo.png"
+                                    alt="manchester united">
+                                <figcaption>
+                                    Manchester Uniteds
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+            </section> <!-- END SPONSOR-->
+
+            <!-- CONTACT-->
+            <section class="contact-section" id="contact">
+                <div class="grid wide row no-gutters">
+                    <div class="col l-4 m-4 c-12">
+                        <ul class="contact-section__info">
+                            <li><i class="fas fa-map-marker-alt box-icon"></i> Address: Lorem ipsum dolor sit amet.</li>
+                            <li><i class="fas fa-envelope box-icon"></i> Email: nguyenhoangkk99@gmail.com</li>
+                            <li><i class="fas fa-phone box-icon"></i> Phone: 0123456789</li>
+                        </ul>
+                        <ul class="contact-section__social">
+                            <li><i class="fab fa-facebook-square"></i></li>
+                            <li><i class="fab fa-twitter-square"></i></li>
+                            <li><i class="fab fa-instagram-square"></i></li>
+                            <li><i class="fab fa-google-plus-square"></i></li>
+                        </ul>
+                    </div>
+                    <div class="col l-8 m-8 c-12">
+                        <form>
+                            <div class="row">
+                                <div class="col l-4 m-4 c-12">
+                                    <label>Name</label>
+                                </div>
+                                <div class="col l-8 m-8 c-12">
+                                    <input type="text" placeholder="Your Name">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col l-4 m-4 c-12">
+                                    <label>Email</label>
+                                </div>
+                                <div class="col l-8 m-8 c-12">
+                                    <input type="email" placeholder="Your Email">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col l-4 m-4 c-12">
+                                    <label>Message</label>
+                                </div>
+                                <div class="col l-8 m-8 c-12">
+                                    <textarea placeholder="Your Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="form__submit">
+                                <input type="submit" class="btn" value="SEND IT">
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </section> <!-- END CONTACT-->
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <p>Copyright &copy; 2018 by SELFTAUGHT TEAM</p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

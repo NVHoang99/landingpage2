@@ -1,0 +1,115 @@
+:root {
+    --white-color: #fff;
+    --white-color-1: #E6E6E6;
+    --white-color-2: #F4F4F4;
+    --white-color-3: #F8F8F8;
+    --black-color: #000;
+    --text-color: #333;
+    --blue-color-1: #90e0ef;
+    --blue-color-2: #3a86ff;
+    --blue-color-3: #70d6ff;
+    --blue-color-4: #F0F7FC;
+    --blue-color-5: #265077;
+    --orange-color-1: #e67e22;
+    --orange-color-2: #d35400;
+}
+
+/*-------------------------------------*/
+/*----------DEFAULT SETUP--------------*/
+/*-------------------------------------*/
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    color: #5a5a5a;
+    background-color: var(--white-color) ;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/*-------------------------------------*/
+/*----------REUSABLE COMPONENT---------*/
+/*-------------------------------------*/
+
+.btn {
+    text-decoration: none;
+    color: white;
+    background-color: var(--orange-color-1);
+    padding: 10px 30px;
+    border-radius: 25px;
+    display: inline-block;
+    width: 160px;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.btn:hover {
+    background-color: var(--orange-color-2);  
+}
+
+h2,h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+}
+
+h2 { 
+    color: var(--orange-color-1);
+    font-size: 3.8rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+h2::after{
+    content: "";
+    display: block;
+    width: 160px;
+    height: 2px;
+    background-color: rgb(230, 126, 34, 0.6);
+    margin: 0 auto;
+    margin-top: 7px;
+}
+
+
+h3 {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: #265077;
+    color: white;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    font-size: 2rem;
+}
+
+.txt {
+    text-align: center;
+    color: #265077;
+    font-size: 2.2rem;
+    margin: 40px 0;
+    width: 70%;
+    margin-left: 15%;
+    line-height: 3rem;
+}
+
+section {
+    padding: 50px;
+}
+
+.box-icon {
+    color: #195591;
+    font-size: 2rem;
+    margin-right: 10px;
+}
